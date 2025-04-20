@@ -42,6 +42,35 @@ Here’s why C is worth your time:
 - Databases (like SQLite)
 
 ---
+## 🛠️ Setting Up VS Code for C Programming
+
+Follow these simple steps to get started with C programming on **Visual Studio Code**:
+
+### 1. ✅ Install VS Code
+- Go to [https://code.visualstudio.com/](https://code.visualstudio.com/)
+- Download and install it for your OS (Windows, Mac, or Linux)
+
+### 2. ✅ Install the C/C++ Extension
+- Open VS Code
+- Go to the **Extensions** tab (Ctrl+Shift+X)
+- Search for `C/C++` by Microsoft and install it
+
+### 3. ✅ Install a Compiler
+
+#### On Windows:
+- Download **MinGW** from [https://www.mingw-w64.org/](https://www.mingw-w64.org/)
+- During setup:
+  - Architecture: `x86_64`
+  - Threads: `posix`
+  - Exception: `seh`
+- After installation, **add the `bin` folder path to your system's PATH** environment variable
+  (e.g., `C:\mingw-w64\bin`)
+
+#### On macOS:
+```bash
+xcode-select --install
+brew install gcc
+```
 
 ## 🚀 Sample Hello World
 
