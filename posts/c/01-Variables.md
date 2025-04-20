@@ -5,7 +5,7 @@ Variables are the name of the memory location where data is stored .
 ---
  ## For instance,
         a=5,b='Programming '
-<p>Here a is storing the value 5 **integer** in the memory and b is storing "Programming" **string** . We have basically supposed that in the memory , b is the place where we will have our string 'Programmiing'</p>
+<p>Here a is storing the value 5 [a integer] in the memory and b is storing "Programming" [a character]. We have basically supposed that in the memory , b is the place where we will have our string 'Programmiing'</p>
 ---
 ## Rules to define Variables
 a. Variables are case sensitive. C-programming is itself case sensitive which means lowercase and uppercase is different in C 
