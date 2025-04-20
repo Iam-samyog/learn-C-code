@@ -30,6 +30,6 @@ c. There should not be comma or blank space between the variables.
     int roll_no=36; //will be correct
 ```
 
-d.No other symbol other than '_' should be used.You cannot use '/,`.~.@' or any other symbol in place of '_' .
+d.No other symbol other than ' _ ' should be used.You cannot use '/,`.~.@' or any other symbol in place of '_' .
 
 ---
