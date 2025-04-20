@@ -11,10 +11,7 @@ This repo is a collection of beginner-friendly notes, explanations, and code exa
 |-----|------------------------|----------|--------------------------------|
 | 00  | Introduction           | 📝       | [Read](00-introduction.md)     |
 | 01  | Variables              | C/C++    | [Read](01-variables.md)        |
-| 02  | Data Types             | C/C++    | [Read](02-data-types.md)       |
-| 03  | Conditional Statements | C/C++    | [Read](03-conditions.md)       |
-| 04  | Loops                  | C/C++    | [Read](04-loops.md)            |
-| 05  | Functions              | C/C++    | [Read](05-functions.md)        |
+
 | ... | More coming soon 🚧    | 🔧       |                                |
 
 ---
