@@ -5,12 +5,12 @@ This repo is a collection of beginner-friendly notes, explanations, and code exa
 
 ---
 
-## 📚 Table of Contents
+## 📚 Table of Contents For C
 
 | No. | Topic                  | Language | Link                          |
 |-----|------------------------|----------|--------------------------------|
-| 00  | Introduction           | 📝       | [Read](00-introduction.md)     |
-| 01  | Variables              | C/C++    | [Read](01-variables.md)        |
+| 00  | Introduction           | 📝       | [Read](posts/c/00-introduction.md)     |
+| 01  | Variables              | C         | [Read](01-variables.md)        |
 
 | ... | More coming soon 🚧    | 🔧       |                                |
 
