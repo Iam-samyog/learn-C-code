@@ -1,0 +1,22 @@
+# Ignore compiled files
+*.exe
+*.out
+*.o
+*.obj
+
+# Ignore temporary files
+*~
+*.log
+*.tmp
+
+# Ignore IDE/editor-specific files
+.vscode/
+*.code-workspace
+*.idea/
+*.sublime-workspace
+*.sublime-project
+.DS_Store
+
+# Ignore backup files
+*.bak
+*.swp
