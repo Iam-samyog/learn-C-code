@@ -4,15 +4,26 @@
 
 
 int main(){
-    int age=22;
-    float pi=3.14;
-    char hashtag='#';
-    
+    // char name='Samyog';
 
-    printf("C-language\t");
-    printf("Samyog Maharjan\n");
-    printf("C-language");
+    int age;
+    float salary;
+    char rating;
 
-    printf("Age is %d",age);
+   printf("Enter your age:");
+   scanf("%d", &age);
+
+   printf("Enter your salary:");
+   scanf("%f", &salary);
+
+   printf("Enter your rating");
+   scanf(" %c", &rating); // Important to keep space
+
+   printf("You age is %d\t",age);
+   printf("You salary is %f \t",salary);
+   printf("You rating is %c \n",rating);
+
+
+
     return 0;
 }
