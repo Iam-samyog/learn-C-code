@@ -10,6 +10,9 @@ int main(){
 
     }
     else{
-        printf("You cannot vote.\n")
+        printf("You cannot vote.\n");
     }
+    printf("Thank you");
+    return 0;
+
 }
