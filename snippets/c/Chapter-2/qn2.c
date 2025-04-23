@@ -11,14 +11,14 @@ int main(){
     scanf("%d",&snowing);
     printf("%d\n",sunday && snowing);
 
-    //b.If it's wednesday & its sunny;
+    //b.If it's wednesday or its sunny;
     printf("question 2.\n");
     int mon,sunny;
     printf("Enter 1 if it's monday or else 0:");
     scanf("%d",&mon);
     printf("Enter 1 if it's sunny or else 0:");
     scanf("%d",&sunny);
-    printf("%d\n",mon && sunny);
+    printf("%d\n",mon || sunny);
 
     //c. if a number is greater than 8 & less than 45
     printf("question 3.\n");
