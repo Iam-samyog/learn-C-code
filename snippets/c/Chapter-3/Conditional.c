@@ -6,11 +6,15 @@ int main(){
     scanf("%d",&age);
 
     if(age >=18){
-        printf("You can vote.\n");
+        printf("You are an adult.\n");
+
+    }
+    else if(age>13 && age <18){
+        printf("You are teenager \n");
 
     }
     else{
-        printf("You cannot vote.\n");
+        printf("You are a child.\n");
     }
     printf("Thank you");
     return 0;
