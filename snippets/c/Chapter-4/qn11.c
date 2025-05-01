@@ -10,7 +10,7 @@ int main(){
         printf("%d is not a prime number.\n",num);
     }
     else{
-        for(int i=2; i< sqrt(num) ;i++){
+        for(int i=2; i<=sqrt(num) ;i++){
             if(num % i ==0){
              
                 isPrime=1;
