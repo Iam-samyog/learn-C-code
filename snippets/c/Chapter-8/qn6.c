@@ -15,11 +15,16 @@ int main(){
     return 0;
 }
 int vowelsCount(char str[]){
+    char vowels[10]="aeiouAEIOU";
     int count=0;
     for(int i=0;i < strlen(str) ;i++){
-        if(str[i]=='a'||str[i]=='e'||str[i]=='i'||str[i]=='o'||str[i]=='u'||str[i]=='A'||str[i]=='E'||str[i]=='I'||str[i]=='O'||str[i]=='U'){
-            count++;
+        for(int j=0;j<10;j++){
+            if(str[i]==vowels[j]){
+                count++;
+            }
+
         }
+       
     }
     return count;
 }
