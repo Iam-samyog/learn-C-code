@@ -14,7 +14,6 @@ int main(){
     printf("%s\n",(*ptr).diease);
 
     //use of Arrow operator
-
     printf("%p\n",ptr);
     printf("%u\n",ptr->id);
     printf("%u\n",ptr->name);
