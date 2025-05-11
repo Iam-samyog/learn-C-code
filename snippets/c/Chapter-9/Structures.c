@@ -11,7 +11,8 @@ int main(){
     struct student s1;
     s1.cgpa=8.5;
     // s1.name="Samyog";This will be wrong
-    strcpy(s1.name,"Samyog");// This will be right 
+    strcpy(s1.name,"Samyog");
+    // This will be right 
     s1.roll=7694;
 
     printf("%.2f\n",s1.cgpa);
