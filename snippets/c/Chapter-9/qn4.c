@@ -19,6 +19,6 @@ int main(){
 
 }
 void storeComplex(struct complex c1){
-    struct complex *ptr=&c1;
+    struct complex *ptr=&c1;//pointer
     printf("The complex number you have stored is %d+%di",ptr->r,ptr->i);
 }
