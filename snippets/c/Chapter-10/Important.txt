@@ -1,0 +1,1 @@
+Fgetc returns End of File to show that file has ended
