@@ -25,7 +25,7 @@ int main(){
     std s1={1,"Samyog",4.00};
     teach t1={109,"Leonard",56000};
     stf st1={202,"John",40000};
-
+chrome 
     printf("-----Student-----\n");
     printf("Name:%s\n",s1.name);
     printf("Id:%d\n",s1.id);
