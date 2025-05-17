@@ -72,7 +72,7 @@ int main(){
     else if(task==2){
             char ch;
             printf("-----------------------------------\n");
-            printf("Enter 't' for teacher input and 's for staff input");
+            printf("Enter 't' for teacher input and 's for staff input:");
             scanf(" %c",&ch);
             if(ch == 't'){
                  inputTeacherInfo(Teacher_Data);
@@ -86,6 +86,9 @@ int main(){
             }
             printf("-----------------------------------\n");
         
+    }
+    else{
+        printf("Invalid Input .Choose number between (1-4).");
     }
     
 
@@ -128,7 +131,7 @@ void inputStudentInfo(std s1){
     fprintf(fptr, "%-6d %-10s\t%.2f\n", s1.id, s1.name, s1.cgpa);  
     fclose(fptr);
 
-    printf("Added Sucessfully!!");
+    printf("Added Sucessfully!!\n");
     
 }
 
@@ -157,7 +160,7 @@ void inputStaffInfo(stf st1){
     fprintf(fptr, "%-6d %-10s\t%.2f\n", st1.id, st1.name, st1.salary);  
     fclose(fptr);
 
-    printf("Added Sucessfully!!");
+    printf("Added Sucessfully!!\n");
 
 }
 
@@ -186,7 +189,7 @@ void inputTeacherInfo(teach t1){
     fprintf(fptr, "%-6d %-10s\t%.2f\n", t1.id, t1.name, t1.salary);  
     fclose(fptr);
 
-    printf("Added Sucessfully!!");
+    printf("Added Sucessfully!!\n");
 
 }
 
