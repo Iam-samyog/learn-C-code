@@ -82,15 +82,35 @@ int main(){
                
             }
             else{
-                printf("Invalid integer!!\n");
+                printf("Invalid Character!!\n");
             }
             printf("-----------------------------------\n");
         
     }else if(task==3){
         printf("-----------------------------------\n");
-         printStudentInfo();
-          printf("-----------------------------------\n");
-    }else{
+        printStudentInfo();
+        printf("-----------------------------------\n");
+    }else if(task==4){
+         char ch;
+            printf("-----------------------------------\n");
+            printf("Enter 't' for teacher input and 's for staff input:");
+            scanf(" %c",&ch);
+            if(ch == 't'){
+                printTeacherInfo();
+                
+            }
+            else if(ch=='s'){
+                printStaffInfo();
+                
+               
+            }
+            else{
+                printf("Invalid Character!!\n");
+            }
+            printf("-----------------------------------\n");
+
+    }
+    else{
         printf("Invalid Input .Choose number between (1-4).");
     }
     
@@ -202,7 +222,7 @@ void printStudentInfo(){
         FILE *fptr=fopen("Student.txt","r");
         if(fptr == NULL){
             printf("Couldn't open the File\n");
-            return 1;
+           
         }
 
         int search_id;
@@ -216,12 +236,13 @@ void printStudentInfo(){
 
         char buffer[100];
         fgets(buffer, sizeof(buffer), fptr);
-        int found;
+
+        int found=0;
 
         while(fscanf(fptr,"%d %s %f",&id,&name,&cgpa)==3){
             if(id == search_id){
                 printf("\nRecord Found:\n");
-            printf("ID: %d\nName: %s\nSalary: %.2f\n", id, name, cgpa);
+            printf("ID: %d\nName: %s\nCGPA: %.2f\n", id, name, cgpa);
             found = 1;
              break;
             }
@@ -234,24 +255,80 @@ void printStudentInfo(){
         fclose(fptr);
 
 
-        
-        
-
-
-
-
-
 }
-
-
-
-
-
-
 void printStaffInfo(){
-    
+     FILE *fptr=fopen("Teachers.txt","r");
+        if(fptr == NULL){
+            printf("Couldn't open the File\n");
+            
+        }
+
+        int search_id;
+        printf("------Search Teachers------\n");
+        printf("Enter the id:");
+        scanf("%d",&search_id);
+
+        char name[20];
+        int id;
+        float salary;
+
+        char buffer[100];
+        fgets(buffer, sizeof(buffer), fptr);
+        int found=0;
+
+        while(fscanf(fptr,"%d %s %f",&id,name,&salary)==3){
+            if(id == search_id){
+                printf("\nRecord Found:\n");
+            printf("ID: %d\nName: %s\nSalary: %.2f\n", id, name, salary);
+            found = 1;
+             break;
+            }
+        }
+
+         if (!found) {
+        printf("No record found with ID %d\n", search_id);
+        }
+
+        fclose(fptr);
+
 }
-void printTeacherInfo();
+
+void printTeacherInfo(){
+     FILE *fptr=fopen("Staff.txt","r");
+        if(fptr == NULL){
+            printf("Couldn't open the File\n");
+            
+        }
+
+        int search_id;
+        printf("------Search Staff------\n");
+        printf("Enter the id:");
+        scanf("%d",&search_id);
+
+        char name[20];
+        int id;
+        float salary;
+
+        char buffer[100];
+        fgets(buffer, sizeof(buffer), fptr);
+        int found=0;
+
+        while(fscanf(fptr,"%d %s %f",&id,name,&salary)==3){
+            if(id == search_id){
+                printf("\nRecord Found:\n");
+            printf("ID: %d\nName: %s\nSalary: %.2f\n", id, name, salary);
+            found = 1;
+             break;
+            }
+        }
+
+        if (!found) {
+        printf("No record found with ID %d\n", search_id);
+        }
+
+        fclose(fptr);
+
+}
 
 
 
