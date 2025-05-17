@@ -4,6 +4,7 @@
 
 #include<stdio.h>
 #include<math.h>
+#include<stdlib.h>
 #include<string.h>
 
 typedef struct global_students{
@@ -31,9 +32,9 @@ void inputStaffInfo(stf st1);
 void inputTeacherInfo(teach t1);
 
 //Print declaration
-void printStudentInfo(FILE *fptr);
-void printStaffInfo(FILE *fptr);
-void printTeacherInfo(FILE *fptr);
+void printStudentInfo();
+void printStaffInfo();
+void printTeacherInfo();
 
 
 
@@ -68,8 +69,7 @@ int main(){
     if(task == 1){
         inputStudentInfo(Student_Data);
         
-    }
-    else if(task==2){
+    } else if(task==2){
             char ch;
             printf("-----------------------------------\n");
             printf("Enter 't' for teacher input and 's for staff input:");
@@ -86,8 +86,11 @@ int main(){
             }
             printf("-----------------------------------\n");
         
-    }
-    else{
+    }else if(task==3){
+        printf("-----------------------------------\n");
+         printStudentInfo();
+          printf("-----------------------------------\n");
+    }else{
         printf("Invalid Input .Choose number between (1-4).");
     }
     
@@ -192,6 +195,64 @@ void inputTeacherInfo(teach t1){
     printf("Added Sucessfully!!\n");
 
 }
+
+
+//printing 
+void printStudentInfo(){
+        FILE *fptr=fopen("Student.txt","r");
+        if(fptr == NULL){
+            printf("Couldn't open the File\n");
+            return 1;
+        }
+
+        int search_id;
+        printf("------Search Student------\n");
+        printf("Enter the id:");
+        scanf("%d",&search_id);
+
+        char name[20];
+        int id;
+        float cgpa;
+
+        char buffer[100];
+        fgets(buffer, sizeof(buffer), fptr);
+        int found;
+
+        while(fscanf(fptr,"%d %s %f",&id,&name,&cgpa)==3){
+            if(id == search_id){
+                printf("\nRecord Found:\n");
+            printf("ID: %d\nName: %s\nSalary: %.2f\n", id, name, cgpa);
+            found = 1;
+             break;
+            }
+        }
+
+         if (!found) {
+        printf("No record found with ID %d\n", search_id);
+        }
+
+        fclose(fptr);
+
+
+        
+        
+
+
+
+
+
+}
+
+
+
+
+
+
+void printStaffInfo(){
+    
+}
+void printTeacherInfo();
+
 
 
 
