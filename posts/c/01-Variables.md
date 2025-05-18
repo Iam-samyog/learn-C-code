@@ -5,7 +5,7 @@ Variables are the name of the memory location where data is stored .
 ---
  ## For instance,
         a=5,b='Programming '
-<p>Here a is storing the value 5 [a integer] in the memory and b is storing "Programming" [a character]. We have basically supposed that in the memory , b is the place where we will have our string 'Programmiing'</p>
+<p>Here a is storing the value 5 [a integer] in the memory and b is storing "Programming" [a string]. We have basically supposed that in the memory , b is the place where we will have our string 'Programmiing'.Therefore, variables are the  location in the memory where data is being stored.</p>
 ---
 
 ## Rules to define Variables
@@ -33,3 +33,15 @@ c. There should not be comma or blank space between the variables.
 d.No other symbol other than ' _ ' should be used.You cannot use '/,`.~.@' or any other symbol in place of '_' .
 
 ---
+## Syntax in C-programming to declare a Variable
+```
+    data_type variable_name=Value
+```
+ Here, Data type can be integers, strings, float (decimal values),and many more .There are about 3 mainly categories of the data types in C.
+ 
+---
+
+ <img src="https://media.geeksforgeeks.org/wp-content/uploads/20220808115138/DatatypesInC.jpg" alt="Image of Data types"/>
+---
+
+
