@@ -10,7 +10,7 @@ This repo is a collection of beginner-friendly notes, explanations, and code exa
 | No. | Topic                  | Language | Link                          |
 |-----|------------------------|----------|--------------------------------|
 | 00  | Introduction           | 📝       | [Read](posts/c/00-introduction.md)     |
-| 01  | Variables              | C         | [Read](01-variables.md)        |
+| 01  | Variables              | C         | [Read]()        |
 
 | ... | More coming soon 🚧    | 🔧       |                                |
 
