@@ -1,277 +1,172 @@
-\# 🧠 Variables in C Programming
+<h1 align="center">🌟 Introduction to C Programming 🌟</h1>
 
-  
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" width="120" alt="C Language Logo"/>
+</p>
 
-Variables in C are the \*\*names of memory locations\*\* where data is stored. They allow us to store, modify, and retrieve values during the execution of a program.
+<hr/>
 
-  
+<h2>📌 What are Variables?</h2>
 
-\---
+<p>
+Variables are named memory locations used to store data that can be changed during program execution.
+</p>
 
-  
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Memory_layout_variable.png/800px-Memory_layout_variable.png" width="500" alt="Variable memory layout"/>
 
-\## 📌 Understanding Variables with an Example
+<blockquote>
+Example: In <code>int a = 25;</code>, <code>a</code> is the variable name storing the value <code>25</code>.
+</blockquote>
 
-  
+<h3>🔐 Rules for Naming Variables</h3>
+<ul>
+  <li>Case-sensitive (e.g., <code>Age</code> and <code>age</code> are different)</li>
+  <li>Must begin with an alphabet or underscore (<code>_</code>)</li>
+  <li>No commas or blank spaces allowed</li>
+  <li>Only <code>_</code> is allowed as a special character</li>
+</ul>
 
-\`\`\`c
+---
 
-int a = 5;
+<h2>🔠 Data Types in C</h2>
 
-char b\[\] = "Programming";
+<p>Data types specify the type of data a variable can hold.</p>
 
-a stores the integer value 5 in memory.
+<table border="1" cellpadding="8">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>int</td>
+      <td>1, -2, 0</td>
+      <td>Integer values</td>
+    </tr>
+    <tr>
+      <td>float/double</td>
+      <td>3.14, -24.5</td>
+      <td>Real numbers</td>
+    </tr>
+    <tr>
+      <td>char</td>
+      <td>'a', 'A', '#'</td>
+      <td>Single character</td>
+    </tr>
+  </tbody>
+</table>
 
-  
+<img src="https://cdn.programiz.com/sites/tutorial2program/files/data-type-c.jpg" width="500" alt="Data types"/>
 
-b stores the string "Programming" in memory.
+---
 
-  
+<h2>🔒 Constants</h2>
 
-So, a variable is simply a labeled memory space used to hold data.
+<p>Constants are values that do not change during the execution of a program.</p>
 
-  
+<ul>
+  <li><strong>Integer Constants:</strong> 1, 2, -3</li>
+  <li><strong>Real Constants:</strong> 1.0, -3.14</li>
+  <li><strong>Character Constants:</strong> 'A', 'b', '#'</li>
+</ul>
 
-🧾 Syntax to Declare a Variable in C
+---
 
-c
+<h2>🔑 Keywords in C</h2>
 
-Copy
+<p>Keywords are reserved words in C that have special meanings.</p>
 
-Edit
+<img src="https://cdn.programiz.com/sites/tutorial2program/files/c-keywords_0.jpg" width="600" alt="C Keywords"/>
 
-data\_type variable\_name = value;
+<p>Some examples include:</p>
+<pre><code>
+int     float   return  while
+char    if      for     break
+else    void    struct  typedef
+</code></pre>
 
-data\_type defines the kind of data the variable will store (e.g., int, float, char).
+---
 
-  
+<h2>⚙️ Program Structure in C</h2>
 
-variable\_name is the name of the variable.
-
-  
-
-value is the data assigned to that variable.
-
-  
-
-🔢 Categories of Data Types
-
-There are three main categories of data types in C:
-
-  
-
-Primary (Fundamental) – int, char, float, double, void
-
-  
-
-Derived – Arrays, Pointers, Structures, Unions
-
-  
-
-User-defined – enum, typedef, etc.
-
-  
-
-For now, let’s focus on Primary Data Types:
-
-  
-
-Data Type	Size (Typical)	Example Values
-int	2 or 4 bytes	1, -25, 1000
-char	1 byte	'A', 'z'
-float	4 bytes	3.14, 7.25
-double	8 bytes	3.1415926535
-void	0 byte	Represents "no value"
-
-
-⚙️ Rules for Naming Variables
-
-To declare variables properly, follow these rules:
-
-  
-
-Case-sensitive – Age and age are different variables.
-
-  
-
-Start with a letter or underscore \_ – Valid: \_age, name; Invalid: 1age
-
-  
-
-No spaces or commas –
-
-❌ int roll, no = 5;
-
-✅ int roll\_no = 5;
-
-  
-
-Avoid special characters – Only \_ is allowed. Do not use @, #, $, %, etc.
-
-  
-
-✅ Good Practice:
-
-Use meaningful names:
-
-  
-
-c
-
-Copy
-
-Edit
-
-int score = 90;      // Good
-
-int x = 90;          // Avoid (not clear)
-
-🧪 Example of Declaration and Initialization
-
-c
-
-Copy
-
-Edit
-
-#include 
-
-  
+<pre><code>#include &lt;stdio.h&gt;
 
 int main() {
-
-    int age = 21;
-
-    float height = 5.9;
-
-    char grade = 'A';
-
-  
-
-    printf("Age: %d\\n", age);
-
-    printf("Height: %.1f\\n", height);
-
-    printf("Grade: %c\\n", grade);
-
-  
-
+    printf("Hello World");
     return 0;
-
 }
+</code></pre>
 
-✅ Output:
+<p>
+Every C program starts with the <code>main()</code> function and includes headers like <code>&lt;stdio.h&gt;</code> for input/output functions.
+</p>
 
-makefile
+---
 
-Copy
+<h2>💬 Comments in C</h2>
 
-Edit
+<p>Used to improve code readability and are ignored during compilation.</p>
 
-Age: 21
+<ul>
+  <li>Single-line: <code>// This is a comment</code></li>
+  <li>Multi-line: <code>/* This is a multi-line comment */</code></li>
+</ul>
 
-Height: 5.9
+---
 
-Grade: A
+<h2>🖨️ Output in C</h2>
 
-📥 Taking Input from the User
+<p>Use <code>printf()</code> to display output.</p>
 
-In C, we use scanf() to take input from the user.
+<pre><code>
+printf("Hello World\n");
+printf("Age is %d", age);
+printf("Value of pi is %f", pi);
+printf("Star looks like %c", star);
+</code></pre>
 
-  
+<img src="https://www.sitesbay.com/c/images/c-output.png" width="450" alt="C Output Example"/>
 
-🧾 Syntax:
+---
 
-c
+<h2>📥 Input in C</h2>
 
-Copy
+<p>Use <code>scanf()</code> to take input from the user.</p>
 
-Edit
+<pre><code>scanf("%d", &age);</code></pre>
 
-scanf("format\_specifier", &variable);
+---
 
-You must use the address-of operator & when taking input.
+<h2>⚙️ Compilation Process</h2>
 
-  
+<p>C code needs to be compiled before it can run. The compiler converts it into machine-level code.</p>
 
-✅ Example:
+<img src="https://static.javatpoint.com/cpages/images/c-program-structure.png" width="600" alt="Compilation Process"/>
 
-c
+<pre><code>
+Source Code (hello.c)
+    ↓
+C Compiler
+    ↓
+Executable File (a.exe for Windows, a.out for Linux/Mac)
+</code></pre>
 
-Copy
+---
 
-Edit
+<h2>🚀 Summary</h2>
 
-#include 
+<ul>
+  <li>📦 Variables store changeable data</li>
+  <li>🔢 Data types define the type of data (int, float, char)</li>
+  <li>🔐 Constants are fixed values</li>
+  <li>🔑 Keywords are reserved by the language</li>
+  <li>🖥️ Output: <code>printf()</code>, 📥 Input: <code>scanf()</code></li>
+  <li>⚙️ Compilation turns C code into executable machine code</li>
+</ul>
 
-  
+---
 
-int main() {
-
-    int age;
-
-    printf("Enter your age: ");
-
-    scanf("%d", &age);
-
-    printf("You are %d years old.\\n", age);
-
-    return 0;
-
-}
-
-📌 Format Specifiers in C
-
-Data Type Format Specifier Example
-
-int %d or %i scanf("%d", &a);
-
-char %c scanf("%c", &ch);
-
-float %f scanf("%f", &pi);
-
-double %lf scanf("%lf", &g);
-
-string (char array) %s scanf("%s", name);
-
-  
-
-🧾 Purpose of Semicolon in C
-
-Every statement in C ends with a semicolon (;). It tells the compiler:
-
-  
-
-"This line of code is complete."
-
-  
-
-✅ Example:
-
-c
-
-Copy
-
-Edit
-
-int age = 20;   // ends with ;
-
-Forgetting a semicolon will cause a compile-time error.
-
-  
-
-🧠 Final Notes
-
-Use understandable names for variables.
-
-  
-
-Always declare variables before use.
-
-  
-
-Use correct format specifiers for both printf() and scanf() functions.
-
-  
-
-Don’t forget your semicolon!
+<h3 align="center">Happy Coding in C! 👨‍💻👩‍💻</h3>
