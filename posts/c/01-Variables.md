@@ -12,7 +12,7 @@
 Variables are named memory locations used to store data that can be changed during program execution.
 </p>
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Memory_layout_variable.png/800px-Memory_layout_variable.png" width="500" alt="Variable memory layout"/>
+<img src="https://files.codingninjas.in/article_images/memory-layout-of-c-program-0-1652603505.jpg" width="500" alt="Variable memory layout"/>
 
 <blockquote>
 Example: In <code>int a = 25;</code>, <code>a</code> is the variable name storing the value <code>25</code>.
@@ -59,7 +59,7 @@ Example: In <code>int a = 25;</code>, <code>a</code> is the variable name storin
   </tbody>
 </table>
 
-<img src="https://cdn.programiz.com/sites/tutorial2program/files/data-type-c.jpg" width="500" alt="Data types"/>
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20220808115138/DatatypesInC.jpg" width="500" alt="Data types"/>
 
 ---
 
@@ -79,7 +79,7 @@ Example: In <code>int a = 25;</code>, <code>a</code> is the variable name storin
 
 <p>Keywords are reserved words in C that have special meanings.</p>
 
-<img src="https://cdn.programiz.com/sites/tutorial2program/files/c-keywords_0.jpg" width="600" alt="C Keywords"/>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2f9iNwwsj1YQ-BVzLtfgCiQ5eoSH1EaGmlA&s" width="600" alt="C Keywords"/>
 
 <p>Some examples include:</p>
 <pre><code>
@@ -122,6 +122,10 @@ Every C program starts with the <code>main()</code> function and includes header
 <p>Use <code>printf()</code> to display output.</p>
 
 <pre><code>
+int age=15;
+float pi=3.14;
+Star ch='*';
+
 printf("Hello World\n");
 printf("Age is %d", age);
 printf("Value of pi is %f", pi);
