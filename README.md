@@ -87,7 +87,7 @@ Hello, Samyog! Welcome to C programming!
   <h2>🤝 Let's Connect</h2>
   <p>📫 Find me on:</p>
   <ul>
-    <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
+    <li><a href="https://github.com/Iam-samyog" target="_blank">GitHub</a></li>
     <li><a href="https://www.linkedin.com/in/yourusername" target="_blank">LinkedIn</a></li>
   </ul>
 
